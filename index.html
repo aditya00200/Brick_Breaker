@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/WOPKzOLtYob6PBQvS7TChMuyuGCBICfe08GEf4yDknPOZm9B55HBm0D0Erm6Ge9n_Kg" type="image/x-icon">
+</head>
+<body>
+
+
+    <div id="box">
+
+        <div id="landing_screen">
+            <div id="landing_title">
+                <img src="https://play-lh.googleusercontent.com/WOPKzOLtYob6PBQvS7TChMuyuGCBICfe08GEf4yDknPOZm9B55HBm0D0Erm6Ge9n_Kg">
+                <div id="landing_screen_title">
+                    <span>Brick Breaker</span>
+                    <span id="my_name">-By Aditya Sharma</span>
+                </div>
+            </div>
+
+            <button id="enter_game_btn">Enter Game</button>
+        </div>
+
+
+        <div id="start_screen" class="hidden">
+            <div id="title">
+                <img src="https://play-lh.googleusercontent.com/WOPKzOLtYob6PBQvS7TChMuyuGCBICfe08GEf4yDknPOZm9B55HBm0D0Erm6Ge9n_Kg"> <span>Brick Breaker</span>
+            </div>
+
+            <p id="difficulty">
+                Select difficulty:
+            </p>
+            <div class="level_buttons" >
+                <p><button id="easy_level">EASY</button></p>
+                <p><button id="medium_level">MEDIUM</button></p>
+                <p><button id="hard_level">HARD</button></p>
+            </div>
+
+            <button id="back_to_landing">Back</button>
+
+        </div>
+
+        <nav id="score_nav" class="hidden">
+            <span>Score: <span id="score">0</span></span>
+            <span>High Score: <span id="high_score">0</span></span>
+        </nav>
+
+        <canvas id="ground">
+
+        </canvas>
+
+        <div id="gameOverScreen" class="hidden">
+            <p >Score: <span id="game_over_score">0</span></p>
+            <p >Game Over!</p>
+            <button id="restart_button">Restart</button>
+        </div>
+
+        <div id="gameWinScreen" class="hidden">
+            <p >Score: <span id="game_win_score"></span></p>
+            <p >Game Win!</p>
+            <button id="restart_button_2">Restart</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+

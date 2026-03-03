@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #667eea;
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.hidden{
+    display:none !important;
+}
+
+#box{
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    height:650px;
+    width:900px;
+    border-radius:5px;
+    
+}
+
+
+
+nav{
+    background:rgb(42, 42, 42);
+    border-radius:5px;
+    height:70px;
+    padding:0 20px 0 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:white;
+
+}
+
+#title{
+    display:flex;
+    align-items:center;
+    gap:0px;
+    font-size:70px;
+    font-weight:500;
+    padding:50px 0 50px 10px;
+    color:white;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+}
+img{
+    height:70px;
+    padding:10px;
+}
+
+#difficulty{
+    font-size:40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    font-weight:500;
+    padding-left:20px;
+}
+
+.level_buttons{
+    padding:30px;
+
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    width:120px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+#gameOverScreen{
+    display: flex;
+    flex-direction:column;
+    font-size:70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    padding-top:20%;
+    gap:10%;
+}
+
+#gameWinScreen{
+    display: flex;
+    flex-direction:column;
+    font-size:70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    padding-top:20%;
+    gap:10%;
+}
+
+
+#landing_screen{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    gap:50px;
+    color:white;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    transition: all 0.5s ease;
+}
+
+#landing_title{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    font-size:70px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+    animation: floatTitle 2s ease-in-out infinite alternate;
+}
+
+#landing_screen_title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#landing_screen_title span:first-child {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#my_name{
+    font-size:20px;
+    color:#cfcfcf;
+    margin-top:5px;
+}
+
+#landing_title img{
+    height:100px;
+}
+
+#enter_game_btn{
+    width:250px;
+    height:70px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 35px;
+    border: 2px solid #00c6ff;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 20px #00c6ff;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+#enter_game_btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #00f0ff, 0 0 80px #0072ff;
+}
+
+
+@keyframes floatTitle {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(-10px);}
+}
+
+#back_to_landing{
+    margin-left:400px;
+    margin-top:20px;
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color:white;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+
+#back_to_landing:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff6a00, 0 0 40px #ee0979;
+}
